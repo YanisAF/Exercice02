@@ -1,21 +1,37 @@
 package org.example;
 
 import org.example.model.Book;
-import org.example.model.LibraryItem;
+
+import org.example.model.BorrowRecord;
+import org.example.model.Library;
 import org.example.model.Magazine;
 
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.printf("Ajout des éléments à la bibliothèque....\n");
-        System.out.println("Liste des éléments disponibles : ");
+        Library library = new Library();
 
-        LibraryItem book1 = new Book(1, "Effective Java", 2018, "Programmation", "Joshua Bloch");
-        LibraryItem magazine = new Magazine(2, "National Geographic", 2023, 42);
+        library.addItem(new Book(1,"tom tom et nana",1990,"toto","Enfants"));
+        library.addItem(new Magazine(2,"toto et tata",2012,42));
 
-        System.out.println(book1.getDetails());
-        System.out.println(magazine.getDetails());
+
+        // Liste de element dispo
+        System.out.println("Liste des elements disponible");
+        library.listAvailableItems();
+
+        // emprunter un élement
+        System.out.println("Emprunt d'un element ...");
+        BorrowRecord record = library.borrowItem(1,"Titi","2024-12-03");
+        System.out.println(record);
+
+        // lister des elements empruntes
+        System.out.println("listes de elements empruntés");
+        library.listBorrowedItems();
+
+        // Liste de element dispo
+        System.out.println("Liste des elements disponible");
+        library.listAvailableItems();
 
 
 
