@@ -1,6 +1,6 @@
 package org.example.model;
 
-public class Magazine extends LibraryItem{
+public final class Magazine extends LibraryItem{
    private int issueNumber;
 
     public Magazine(int id, String title, int publicationYear, int issueNumber) {

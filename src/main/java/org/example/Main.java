@@ -5,7 +5,6 @@ import org.example.model.LibraryItem;
 import org.example.model.Magazine;
 
 
-
 public class Main {
     public static void main(String[] args) {
 
@@ -17,6 +16,8 @@ public class Main {
 
         System.out.println(book1.getDetails());
         System.out.println(magazine.getDetails());
+
+
 
 
     }

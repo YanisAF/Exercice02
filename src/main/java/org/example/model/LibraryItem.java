@@ -1,7 +1,7 @@
 package org.example.model;
 
 
-public abstract class LibraryItem {
+public sealed abstract class LibraryItem permits Book, Magazine {
 
     private int id;
     private String title;
