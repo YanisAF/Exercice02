@@ -18,8 +18,8 @@ public class Magazine extends LibraryItem{
 
     @Override
     public String getDetails(){
-        return "Title : "+title+
-                "Numéro : "+issueNumber+
-                "Année "+publicationYear;
+        return "Title : "+getTitle()+
+                ", Numéro : "+issueNumber+
+                ", Année : "+getPublicationYear();
     }
 }

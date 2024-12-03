@@ -3,9 +3,9 @@ package org.example.model;
 
 public abstract class LibraryItem {
 
-    int id;
-    String title;
-    int publicationYear;
+    private int id;
+    private String title;
+    private int publicationYear;
 
     public LibraryItem(int id, String title, int publicationYear) {
         this.id = id;

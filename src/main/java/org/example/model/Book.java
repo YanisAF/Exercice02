@@ -28,10 +28,10 @@ public class Book extends LibraryItem {
 
     @Override
     public String getDetails(){
-        return "Titre : "+title+
-                "Auteur : "+author+
-                "Genre : "+genre+
-                "Année : "+publicationYear;
+        return "Titre : "+getTitle()+
+                ", Auteur : "+getAuthor()+
+                ", Genre : "+getGenre()+
+                ", Année : "+getPublicationYear();
 
     }
 

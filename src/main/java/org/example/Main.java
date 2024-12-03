@@ -12,7 +12,7 @@ public class Main {
         System.out.printf("Ajout des éléments à la bibliothèque....\n");
         System.out.println("Liste des éléments disponibles : ");
 
-        LibraryItem book1 = new Book(1, "Effective Java, ", 2018, "Programmation", "Joshua Bloch");
+        LibraryItem book1 = new Book(1, "Effective Java", 2018, "Programmation", "Joshua Bloch");
         LibraryItem magazine = new Magazine(2, "National Geographic", 2023, 42);
 
         System.out.println(book1.getDetails());
